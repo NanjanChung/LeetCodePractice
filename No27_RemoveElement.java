@@ -28,5 +28,6 @@ class Solution {
 /*
 Note:
 1. Is there a good way for Java to do swap?
-2. Memorize what's the length method for array and list
+    Ans: Nope
+2. Memorize what's the length method for array and list    
 */
