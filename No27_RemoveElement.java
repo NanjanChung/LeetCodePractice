@@ -1,19 +1,20 @@
 class Solution {
     public int removeElement(int[] nums, int numToRemove) {        
         int sortedEndIndex = 0;
-        for(int i = 0; i<nums.length; i++)
+        for(int i = 0; i < nums.length; i++)
         {
-            if(nums[i]==numToRemove)
+            if(nums[i] == numToRemove)
             {
                 continue;    
             }
-            else
+            
+            if(i != sortedEndIndex)
             {
                 swap(nums, sortedEndIndex, i);
             }
+            sortedEndIndex++;
         }
-        int sortedElementsSize = sortedEndIndex + 1;
-        return sortedElementsSize;
+        return sortedEndIndex;
     }
     
     public void swap(int[] nums, int index1, int index2)
