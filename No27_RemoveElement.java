@@ -26,8 +26,13 @@ class Solution {
 }
 
 /*
+Routine Questions:
+1. What's space and time complexity of the method?
+Since it iterates through the nums without other inner loops, the time complexity is O(n).
+*/
+ 
+/*
 Note:
 1. Is there a good way for Java to do swap?
-    Ans: Nope
 2. Memorize what's the length method for array and list    
 */
